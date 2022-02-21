@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html {
+  background-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-border {
+  padding: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #fff;
+  padding: 30px 0 30px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+.banner h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.banner h3 {
+  font-weight: 400;
+}
+.banner h3 code {
+  font-family: "Ubuntu Mono", monospace;
+  color: #F68B1F;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.header .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__item-left {
+  display: flex;
+  align-items: center;
+}
+.header__item-left img {
+  height: 50px;
+  margin: 5px;
+}
+.header__item-right nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+.header__item-right nav ul li {
+  height: 100%;
+}
+.header__item-right nav ul li:not(:first-child) {
+  margin-left: 20px;
+}
+.header__item-right nav ul a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  color: #810D48;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+.header__item-right nav ul a:hover {
+  color: #F68B1F;
+}
+
+/*# sourceMappingURL=style.css.map */
