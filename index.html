@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="banner">
-        <h1>Build your Ui without leaving HTML</h1>
-        <h3>Irepub is a CSS Frameworks with classes like <code>d-flex</code>, <code>p-4</code>, <code>ta-center</code> and <code>rotX-90</code> that can be used to design many UI.</h3>
-    </div>
     <section class="header">
         <div class="header-container">
             <div class="header__item-PC">
@@ -30,7 +26,19 @@
                 </div>
             </div>
             <div class="header__item-mobile">
-                <div class="header__button button-noborder"></div>
+                <a href="#mobilenav" class="header__mobile-button button-noborder">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
+                <div class="header__item-mobile__list" id="mobilenav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Documents</a></li>
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Github</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
