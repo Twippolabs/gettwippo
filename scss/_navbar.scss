@@ -1,66 +1,18 @@
 .header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: #fff;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .header__item-mobile__list {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #fff;
-        height: 100vh;
-        border-left: 1px solid #eee;
-        transform: translateY(100%);
-        &:target {
-            transform: translateY(0%);
-        }
-        ul {
-            list-style: none;
-            li {
-                a {
-                    text-decoration: none;
-                    color: $purple;
-                    font-weight: 700;
-                    padding: 10px;
-                    transition: .25s ease;
-                    display: block;
-                }
-            }
-        }
-    }
-    #mobilenav:target {
-        transform: translateY(0%);
     }
     .header__item-PC {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-    }
-    .header__item-mobile {
-        display: none;
-        button {
-            font-size: 20px;
-            color: $purple;
-            padding-bottom: 0;
-            transition: .25s ease;
-            &:hover {
-                color: $orange;
-            }
-        }
-    }
-    @media (max-width: 800px) {
-        .header__item-right {
-            display: none;
-        }
-        .header__item-mobile {
-            display: block;
+        @media (max-width: 550px) {
+            overflow-x: scroll;
         }
     }
     .header-container {
@@ -70,7 +22,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justift-content: space-between;
+        justify-content: space-between;
         .header__item-left {
             img {
                 height: 50px;
@@ -87,7 +39,6 @@
                         &:not(:first-child) {
                             margin-left: 20px;
                         }
-                    }
                     a {
                         height: 100%;
                         display: flex;
