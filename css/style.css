@@ -153,12 +153,18 @@ html {
   height: fit-content;
   color: #fff;
   background-color: #303030;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   padding: 20px;
 }
 .home h2 {
   margin-bottom: 20px;
   color: #F68B1F;
+}
+.home h3 {
+  padding: 5px 10px;
+  border: 1px solid #404040;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
 }
 .home .tab-item {
   padding: 5px 10px;
@@ -235,6 +241,20 @@ html {
   font-weight: 400;
   font-size: 15px;
   color: #909090;
+}
+.home .starter-template .code {
+  padding: 10px;
+  width: 100%;
+  font-family: "Ubuntu Mono", monospace;
+}
+.home .starter-template .code span, .home .starter-template .code div {
+  line-height: 1.5;
+}
+.home .starter-template .code .indent-4 {
+  margin-left: 20px;
+}
+.home .starter-template .code .indent-8 {
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
