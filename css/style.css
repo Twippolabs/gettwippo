@@ -29,9 +29,18 @@ html {
   cursor: pointer;
 }
 
+.autoinput {
+  color: #fff;
+}
+.autoinput span {
+  font-family: "Ubuntu Mono", monospace;
+}
+.autoinput .typed-cursor {
+  color: #fff;
+}
+
 .tag {
   color: #a7925a;
-  border: 1px solid #eee;
 }
 
 .tagname {
@@ -48,8 +57,7 @@ html {
 
 .header {
   background-color: #fff;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  box-shadow: 0 8px 17px rgba(221, 221, 221, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,8 +113,128 @@ html {
   color: #F68B1F;
 }
 
+.banner {
+  margin-top: 2.5%;
+  padding: 0 2.5% 2.5% 2.5%;
+}
+.banner h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  background-image: linear-gradient(to right, #B62467, #F68B1F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner h3 {
+  font-weight: 400;
+  text-align: center;
+  color: #303030;
+}
+.banner h3 code {
+  font-family: "Ubuntu Mono", monospace;
+  color: #B62467;
+}
+
 .autoinput-container {
+  background-color: rgba(21, 21, 21, 0.75);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+}
+.autoinput-container .autoinput span {
+  word-wrap: unset;
+}
+
+.home {
+  height: fit-content;
+  color: #fff;
+  background-color: #303030;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+}
+.home h2 {
+  margin-bottom: 20px;
+  color: #F68B1F;
+}
+.home .tab-item {
+  padding: 5px 10px;
+  background-color: #505050;
+  border: 0;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  opacity: 1;
+  cursor: pointer;
+}
+.home .tab-item:hover {
+  opacity: 0.5;
+}
+.home .tab-item.active {
   background-color: #151515;
+  opacity: 1;
+}
+.home .tab-pane {
+  background-color: #151515;
+  border-radius: 0 5px 5px 5px;
+  display: none;
+  padding: 10px;
+}
+.home .tab-pane.active {
+  display: block;
+}
+.home .tab-pane span {
+  font-family: "Ubuntu Mono", sans-serif;
+}
+.home .tab-pane a {
+  color: #F68B1F;
+  text-decoration: none;
+  border-bottom: 1px solid #B62467;
+  margin: 0 10px 0 10px;
+  padding: 0;
+  transition: 0.25s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.home .tab-pane a:hover {
+  padding: 0 10px 0 10px;
+  margin: 0;
+  cursor: pointer;
+  background-color: #F68B1F;
+  color: #B62467;
+  border-bottom: 5px solid #B62467;
+}
+.home .code-requirements {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.home .code-requirements .step {
+  margin-bottom: 15px;
+}
+.home .code-requirements h2 {
+  margin-bottom: 0;
+}
+.home .code-requirements h3 {
+  color: #808080;
+  font-weight: 400;
+}
+.home .code {
+  padding: 5px 10px;
+  background-color: #151515;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  width: fit-content;
+}
+.home .code span {
+  font-family: "Ubuntu Mono", monospace;
+}
+.home .starter-template h2 {
+  margin-bottom: 0;
+}
+.home .starter-template h3 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #909090;
 }
 
 /*# sourceMappingURL=style.css.map */

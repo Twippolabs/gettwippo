@@ -1,3 +1,36 @@
+.banner {
+    margin-top: 2.5%;
+    padding: 0 2.5% 2.5% 2.5%;
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        background-image: linear-gradient(to right, $purple, $orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3 {
+        font-weight: 400;
+        text-align: center;
+        color: #303030;
+        code {
+            font-family: 'Ubuntu Mono', monospace;
+            color: $purple;
+        }
+    }
+}
 .autoinput-container {
-    background-color: #151515;
+    background-color: rgba($color: #151515, $alpha: 0.75);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    .autoinput {
+        span {
+            word-wrap: unset;
+        }
+    }
 }

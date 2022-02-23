@@ -1,0 +1,89 @@
+.home {
+    height: fit-content;
+    color: #fff;
+    background-color: #303030;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    h2 {
+        margin-bottom: 20px;
+        color: $orange;
+    }
+    .tab-item {
+        padding: 5px 10px;
+        background-color: #505050;
+        border: 0;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        opacity: 1;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+        &.active {
+            background-color: #151515;
+            opacity: 1;
+        }
+    }
+    .tab-pane {
+        background-color: #151515;
+        border-radius: 0 5px 5px 5px;
+        display: none;
+        padding: 10px;
+        &.active {
+            display: block;
+        }
+        span {
+            font-family: 'Ubuntu Mono', sans-serif;
+        }
+        a {
+            color: $orange;
+            text-decoration: none;
+            border-bottom: 1px solid $purple;
+            margin: 0 10px 0 10px;
+            padding: 0;
+            transition: .25s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+            &:hover {
+                padding: 0 10px 0 10px;
+                margin: 0;
+                cursor: pointer;
+                background-color: $orange;
+                color: $purple;
+                border-bottom: 5px solid $purple;
+            }
+        }
+    }
+    .code-requirements {
+        margin-bottom: 10px;
+        margin-top: 30px;
+        .step {
+            margin-bottom: 15px;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+        h3 {
+            color: #808080;
+            font-weight: 400;
+        }
+    }
+    .code {
+        padding: 5px 10px;
+        background-color: #151515;
+        border: 1px solid #505050;
+        border-radius: 5px;
+        width: fit-content;
+        span {
+            font-family: 'Ubuntu Mono', monospace;
+        }
+    }
+    .starter-template {
+        h2 {
+            margin-bottom: 0;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 15px;
+            color: #909090;
+        }
+    }
+}

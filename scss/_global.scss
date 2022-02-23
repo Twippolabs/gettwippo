@@ -28,7 +28,16 @@ $orange: #F68B1F;
     border-radius: 8px;
     cursor: pointer;
 }
-.tag {color: #a7925a; border: 1px solid #eee;}
+.autoinput {
+    color: #fff;
+    span {
+        font-family: 'Ubuntu Mono', monospace;
+    }
+    .typed-cursor {
+        color: #fff;
+    }
+}
+.tag {color: #a7925a;}
 .tagname {color: #a7925a;}
 .artribute {color: #DDBD4E;}
 .artributeValue {color: #4C928A;}
