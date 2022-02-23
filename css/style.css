@@ -29,6 +29,23 @@ html {
   cursor: pointer;
 }
 
+.tag {
+  color: #a7925a;
+  border: 1px solid #eee;
+}
+
+.tagname {
+  color: #a7925a;
+}
+
+.artribute {
+  color: #DDBD4E;
+}
+
+.artributeValue {
+  color: #4C928A;
+}
+
 .header {
   background-color: #fff;
   border-top: 1px solid #eee;
@@ -86,6 +103,10 @@ html {
 }
 .header-container .header__item-right nav ul li a:hover {
   color: #F68B1F;
+}
+
+.autoinput-container {
+  background-color: #151515;
 }
 
 /*# sourceMappingURL=style.css.map */
