@@ -1,12 +1,27 @@
 .introduce {
+    background-color: #505050;
     padding: 2.5%;
     h1 {
-        color: $purple;
+        color: #fff;
+        font-size: 40px;
+        max-width: 50%;
+        background-color: #454545;
+        border: 1px solid #606060;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 5px;
     }
     h3 {
         color: $orange;
         font-weight: 400;
         max-width: 50%;
+        code {
+            font-family: "Ubuntu Mono", monospace;
+            background-color: #151515;
+            padding: 5px 10px;
+            border: 1px solid #505050;
+            border-radius: 5px;
+        }
     }
     .tab-item2 {
         opacity: 0.5;
@@ -98,7 +113,7 @@
             }
         }
         .result {
-            background-color: #eee;
+            background-color: #151515;
             border: 1px solid #505050;
             border-top: 0;
             padding: 10px;
@@ -106,11 +121,11 @@
             margin-bottom: 10px;
             button {
                 padding: 10px;
-                background-color: #f8fafc;
-                color: #0f172a;
+                background-color: #0f172a;
+                color: #f8fafc;
                 font-family: "Poppins", sans-serif;
                 text-align: center;
-                border: 1px solid #0f172a;
+                border: 1px solid #f8fafc;
                 border-radius: 10px;
             }
         }
@@ -132,6 +147,8 @@
         .result {
             background-color: #151515;
             padding: 10px;
+            border: 1px solid #505050;
+            border-top: 0;
             border-radius: 0 0 5px 5px;
             margin-bottom: 10px;
             button {
@@ -142,6 +159,24 @@
                 text-align: center;
                 border: none;
                 border-radius: 10px;
+            }
+        }
+        &.hover {
+            button:hover {
+                background-color: #064e3b;
+                border: 1px solid #ecfdf5;
+            }
+        }
+        &.active {
+            button:active {
+                background-color: #064e3b;
+                border: 1px solid #ecfdf5;
+            }
+        }
+        &.focus {
+            button:focus {
+                background-color: #064e3b;
+                border: 1px solid #ecfdf5;
             }
         }
     }
@@ -164,6 +199,8 @@
             padding: 10px;
             border-radius: 0 0 5px 5px;
             margin-bottom: 10px;
+            border: 1px solid #505050;
+            border-top: 0;
             button {
                 padding: 10px;
                 background-color: #1d4ed8;

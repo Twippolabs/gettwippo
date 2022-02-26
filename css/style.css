@@ -58,7 +58,6 @@ html {
 
 .header {
   background-color: #fff;
-  box-shadow: 0 8px 17px rgba(221, 221, 221, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,8 +114,7 @@ html {
 }
 
 .banner {
-  margin-top: 2.5%;
-  padding: 0 2.5% 2.5% 2.5%;
+  padding: 10% 2.5% 10% 2.5%;
 }
 .banner h1 {
   width: 100%;
@@ -136,25 +134,11 @@ html {
   color: #B62467;
 }
 
-.autoinput-container {
-  background-color: rgba(21, 21, 21, 0.75);
-  padding: 10px;
-  border-radius: 5px;
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: fit-content;
-}
-.autoinput-container .autoinput span {
-  word-wrap: unset;
-}
-
 .home {
   height: fit-content;
   color: #fff;
   background-color: #303030;
-  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
   padding: 20px;
 }
 .home h2 {
@@ -257,15 +241,30 @@ html {
 }
 
 .introduce {
+  background-color: #505050;
   padding: 2.5%;
 }
 .introduce h1 {
-  color: #B62467;
+  color: #fff;
+  font-size: 40px;
+  max-width: 50%;
+  background-color: #454545;
+  border: 1px solid #606060;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 .introduce h3 {
   color: #F68B1F;
   font-weight: 400;
   max-width: 50%;
+}
+.introduce h3 code {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: #151515;
+  padding: 5px 10px;
+  border: 1px solid #505050;
+  border-radius: 5px;
 }
 .introduce .tab-item2 {
   opacity: 0.5;
@@ -350,7 +349,7 @@ html {
   font-weight: 700;
 }
 .introduce .button .result {
-  background-color: #eee;
+  background-color: #151515;
   border: 1px solid #505050;
   border-top: 0;
   padding: 10px;
@@ -359,11 +358,11 @@ html {
 }
 .introduce .button .result button {
   padding: 10px;
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #0f172a;
+  color: #f8fafc;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  border: 1px solid #0f172a;
+  border: 1px solid #f8fafc;
   border-radius: 10px;
 }
 .introduce .button-primary .code {
@@ -382,6 +381,8 @@ html {
 .introduce .button-primary .result {
   background-color: #151515;
   padding: 10px;
+  border: 1px solid #505050;
+  border-top: 0;
   border-radius: 0 0 5px 5px;
   margin-bottom: 10px;
 }
@@ -393,6 +394,18 @@ html {
   text-align: center;
   border: none;
   border-radius: 10px;
+}
+.introduce .button-primary.hover button:hover {
+  background-color: #064e3b;
+  border: 1px solid #ecfdf5;
+}
+.introduce .button-primary.active button:active {
+  background-color: #064e3b;
+  border: 1px solid #ecfdf5;
+}
+.introduce .button-primary.focus button:focus {
+  background-color: #064e3b;
+  border: 1px solid #ecfdf5;
 }
 .introduce .button-primary-large .code {
   background-color: #151515;
@@ -412,6 +425,8 @@ html {
   padding: 10px;
   border-radius: 0 0 5px 5px;
   margin-bottom: 10px;
+  border: 1px solid #505050;
+  border-top: 0;
 }
 .introduce .button-primary-large .result button {
   padding: 10px;
