@@ -56,26 +56,37 @@ html {
   color: #4C928A;
 }
 
+.code span {
+  word-wrap: break-word;
+}
+
+a {
+  word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .introduce h1 {
+    max-width: 100%;
+  }
+}
 .header {
   background-color: #E5E3C9;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.header__item-PC {
+.header .header__item-PC {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 @media (max-width: 550px) {
-  .header__item-PC {
+  .header .header__item-PC {
     overflow-x: scroll;
   }
 }
-
-.header-container {
+.header .header-container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -83,32 +94,32 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-.header-container .header__item-left img {
+.header .header-container .header__item-left img {
   height: 50px;
   margin: 5px;
 }
-.header-container .header__item-right nav ul {
+.header .header-container .header__item-right nav ul {
   display: flex;
   list-style: none;
 }
-.header-container .header__item-right nav ul li {
+.header .header-container .header__item-right nav ul li {
   height: 100%;
 }
-.header-container .header__item-right nav ul li:not(:first-child) {
+.header .header-container .header__item-right nav ul li:not(:first-child) {
   margin-left: 20px;
 }
-.header-container .header__item-right nav ul li a {
+.header .header-container .header__item-right nav ul li a {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px 0 10px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #810D48;
   font-weight: 700;
   transition: 0.25s ease;
 }
-.header-container .header__item-right nav ul li a:hover {
+.header .header-container .header__item-right nav ul li a:hover {
   color: #F68B1F;
 }
 
@@ -126,6 +137,11 @@ html {
   text-align: center;
   font-size: 50px;
   color: #B62467;
+}
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 30px;
+  }
 }
 .banner h3 {
   font-weight: 400;
@@ -179,6 +195,7 @@ html {
 }
 .home .tab-pane span {
   font-family: "Ubuntu Mono", sans-serif;
+  word-wrap: break-word;
 }
 .home .tab-pane a {
   color: #F68B1F;
@@ -241,6 +258,9 @@ html {
 }
 .home .starter-template .code .indent-8 {
   margin-left: 40px;
+}
+.home .starter-template .code span {
+  word-wrap: break-word;
 }
 
 .introduce {

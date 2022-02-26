@@ -38,6 +38,7 @@
         }
         span {
             font-family: 'Ubuntu Mono', sans-serif;
+            word-wrap: break-word;
         }
         a {
             color: $orange;
@@ -101,6 +102,9 @@
             }
             .indent-8 {
                 margin-left: 40px;
+            }
+            span {
+                word-wrap: break-word;
             }
         }
     }
