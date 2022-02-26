@@ -1,12 +1,16 @@
 .banner {
     padding: 10% 2.5% 10% 2.5%;
+    background-image: linear-gradient(to bottom, #E5E3C9, #fff);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     h1 {
         width: 100%;
         text-align: center;
         font-size: 50px;
-        background-image: linear-gradient(to right, $purple, $orange);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $purple;
     }
     h3 {
         font-weight: 400;
