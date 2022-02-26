@@ -29,7 +29,7 @@
     .pane {
         background-color: #303030;
         padding: 10px;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 5px 5px 5px;
         .pane-row {
             display: flex;
             align-items: stretch;
@@ -46,6 +46,62 @@
                     border-radius: 0 5px 5px 0;
                 }
             }
+        }
+        .pane-row.ubuntu-mono, .pane-row.poppins, .pane-row.merriweather {
+            flex-direction: column;
+            code {
+                font-family: "Ubuntu Mono";
+                color: #707070;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #505050;
+            }
+            h1 {
+                color: $orange;
+                font-size: 35px;
+            }
+            &:first-child {
+                h1 {
+                    font-family: "Ubuntu Mono", monospace;
+                }
+            }
+            &:nth-child(2) {
+                h1 {
+                    font-family: "Poppins", sans-serif;
+                }
+            }
+            &:last-child {
+                h1 {
+                    font-family: "Merriweather", serif;
+                }
+            }
+        }
+    }
+    .code {
+        background-color: #151515;
+        padding: 10px;
+        border: 1px solid #505050;
+        border-radius: 5px 5px 0 0;
+        span {
+            font-family: "Ubuntu Mono", monospace;
+            &.tagValue {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+    .result {
+        background-color: #151515;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        button {
+            padding: 10px;
+            background-color: #047857;
+            color: #ecfdf5;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
         }
     }
 }
