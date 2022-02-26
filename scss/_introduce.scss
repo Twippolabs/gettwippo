@@ -77,31 +77,104 @@
             }
         }
     }
-    .code {
-        background-color: #151515;
-        padding: 10px;
-        border: 1px solid #505050;
-        border-radius: 5px 5px 0 0;
-        span {
-            font-family: "Ubuntu Mono", monospace;
-            &.tagValue {
-                color: #fff;
-                font-weight: 700;
+    .button .result, .button-primary .result, .button-primary-large .result {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button {
+        .code {
+            background-color: #151515;
+            padding: 10px;
+            border: 1px solid #505050;
+            border-radius: 5px 5px 0 0;
+            span {
+                font-family: "Ubuntu Mono", monospace;
+                &.tagValue {
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+        .result {
+            background-color: #eee;
+            border: 1px solid #505050;
+            border-top: 0;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 10px;
+            button {
+                padding: 10px;
+                background-color: #f8fafc;
+                color: #0f172a;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                border: 1px solid #0f172a;
+                border-radius: 10px;
             }
         }
     }
-    .result {
-        background-color: #151515;
-        padding: 10px;
-        border-radius: 0 0 5px 5px;
-        button {
+    .button-primary {
+        .code {
+            background-color: #151515;
             padding: 10px;
-            background-color: #047857;
-            color: #ecfdf5;
-            font-family: "Poppins", sans-serif;
-            text-align: center;
-            border: none;
-            border-radius: 10px;
+            border: 1px solid #505050;
+            border-radius: 5px 5px 0 0;
+            span {
+                font-family: "Ubuntu Mono", monospace;
+                &.tagValue {
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+        .result {
+            background-color: #151515;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 10px;
+            button {
+                padding: 10px;
+                background-color: #047857;
+                color: #ecfdf5;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    .button-primary-large {
+        .code {
+            background-color: #151515;
+            padding: 10px;
+            border: 1px solid #505050;
+            border-radius: 5px 5px 0 0;
+            span {
+                font-family: "Ubuntu Mono", monospace;
+                &.tagValue {
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+        .result {
+            background-color: #151515;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 10px;
+            button {
+                padding: 10px;
+                background-color: #1d4ed8;
+                color: #eff6ff;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: 700;
+            }
         }
     }
 }

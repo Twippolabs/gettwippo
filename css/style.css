@@ -330,25 +330,62 @@ html {
 .introduce .pane .pane-row.ubuntu-mono:last-child h1, .introduce .pane .pane-row.poppins:last-child h1, .introduce .pane .pane-row.merriweather:last-child h1 {
   font-family: "Merriweather", serif;
 }
-.introduce .code {
+.introduce .button .result, .introduce .button-primary .result, .introduce .button-primary-large .result {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introduce .button .code {
   background-color: #151515;
   padding: 10px;
   border: 1px solid #505050;
   border-radius: 5px 5px 0 0;
 }
-.introduce .code span {
+.introduce .button .code span {
   font-family: "Ubuntu Mono", monospace;
 }
-.introduce .code span.tagValue {
+.introduce .button .code span.tagValue {
   color: #fff;
   font-weight: 700;
 }
-.introduce .result {
+.introduce .button .result {
+  background-color: #eee;
+  border: 1px solid #505050;
+  border-top: 0;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px;
+}
+.introduce .button .result button {
+  padding: 10px;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  border: 1px solid #0f172a;
+  border-radius: 10px;
+}
+.introduce .button-primary .code {
+  background-color: #151515;
+  padding: 10px;
+  border: 1px solid #505050;
+  border-radius: 5px 5px 0 0;
+}
+.introduce .button-primary .code span {
+  font-family: "Ubuntu Mono", monospace;
+}
+.introduce .button-primary .code span.tagValue {
+  color: #fff;
+  font-weight: 700;
+}
+.introduce .button-primary .result {
   background-color: #151515;
   padding: 10px;
   border-radius: 0 0 5px 5px;
+  margin-bottom: 10px;
 }
-.introduce .result button {
+.introduce .button-primary .result button {
   padding: 10px;
   background-color: #047857;
   color: #ecfdf5;
@@ -356,6 +393,36 @@ html {
   text-align: center;
   border: none;
   border-radius: 10px;
+}
+.introduce .button-primary-large .code {
+  background-color: #151515;
+  padding: 10px;
+  border: 1px solid #505050;
+  border-radius: 5px 5px 0 0;
+}
+.introduce .button-primary-large .code span {
+  font-family: "Ubuntu Mono", monospace;
+}
+.introduce .button-primary-large .code span.tagValue {
+  color: #fff;
+  font-weight: 700;
+}
+.introduce .button-primary-large .result {
+  background-color: #151515;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px;
+}
+.introduce .button-primary-large .result button {
+  padding: 10px;
+  background-color: #1d4ed8;
+  color: #eff6ff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .blue-50 {
